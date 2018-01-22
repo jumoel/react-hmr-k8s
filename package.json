@@ -5,8 +5,8 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "k8s": "DIR=`pwd` env-subst test.yaml | kubectl apply -f -",
-    "k8s:stop": "DIR=`pwd` env-subst test.yaml | kubectl delete -f -"
+    "k8s": "DIR=`pwd` env-subst k8s.yaml | kubectl apply -f -",
+    "k8s:stop": "DIR=`pwd` env-subst k8s.yaml | kubectl delete -f -"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0-beta.38",
