@@ -1,0 +1,28 @@
+{
+  "name": "k8slocal",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "k8s": "DIR=`pwd` env-subst test.yaml | kubectl apply -f -",
+    "k8s:stop": "DIR=`pwd` env-subst test.yaml | kubectl delete -f -"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0-beta.38",
+    "@babel/preset-env": "^7.0.0-beta.38",
+    "@babel/preset-react": "^7.0.0-beta.38",
+    "babel-loader": "^8.0.0-beta.0",
+    "env-subst": "^1.0.3",
+    "express": "^4.16.2",
+    "webpack": "^4.0.0-alpha.4",
+    "webpack-cli": "^2.0.4",
+    "webpack-dev-middleware": "^2.0.4",
+    "webpack-hot-middleware": "^2.21.0"
+  },
+  "dependencies": {
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-hot-loader": "^4.0.0-beta.16"
+  }
+}
