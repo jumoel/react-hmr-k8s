@@ -2,6 +2,12 @@
 
 Example repo to show how to get React HMR to work in Kubernetes.
 
+## Requirements
+
+* `kubectl`
+* Docker
+* Yarn (or NPM)
+
 ## Setup
 
 Ensure `kubectl` is installed and configured with a proper context.
